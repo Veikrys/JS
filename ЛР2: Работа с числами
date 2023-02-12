@@ -1,0 +1,41 @@
+// Задание 1
+
+let x1 = -5;
+let y1 = 8;
+
+let x2 = 10;
+let y2 = 5;
+
+let c = Math.abs((y2 - y1) * (x2 - x1));
+
+console.log("Площадь прямоугольника равняется: ", c);
+
+// Задание 2
+
+let a =  -5.65566655;
+let b =  -5.84347798;
+const N =  4;
+
+let s = Math.pow(10, N)
+let d1 = Math.floor(Math.abs((a%1)) * s)
+let d2 = Math.floor(Math.abs((b%1)) * s)
+
+console.log(d1)
+console.log(d2)
+
+console.log(d1 < d2)
+console.log(d1 > d2)
+console.log(d1 <= d2)
+console.log(d1 >= d2)
+console.log(d1 === d2)
+console.log(d1 !== d2)
+
+// Задание 3
+
+let n =   0;
+let m =  100;
+
+let r = Math.floor(Math.random() * (Math.max(n, m,) - Math.min(n, m,) + 1)) + Math.min(n, m,);
+let z = r % 2
+let x = r + z - 1
+console.log(x)
