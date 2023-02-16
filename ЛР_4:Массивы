@@ -1,0 +1,53 @@
+
+// Задание 1
+
+let n = 100;
+let m = 10;
+let mn = m - n;
+let count = 10;
+let mas = [];
+
+for(let i = 0; i < count; i++){
+    let random = Math.round(Math.ceil(Math.random() * mn) + n);
+    mas.push(random);
+}
+
+console.log(mas);
+
+// Задание 2
+
+let str = "Привет, мир!"
+let str1 = ""
+for(let i = 0; i < str.length; i++){
+   str1 = str1 + str[(str.length - 1) - i];
+}
+console.log(str1);
+
+// Задание 3
+
+let roadMines = [false, false, true, false, false, false, false, false, true, false]
+let tankHealth = 2
+
+for(let i = 0; i <= roadMines.length - 1; i++){
+console.log("танк переместился на " + (i + 1));
+  if (roadMines[i] == true) {
+    tankHealth = tankHealth - 1;
+  }
+    if (tankHealth == 1 && roadMines[i] == true) {
+    console.log("танк повреждён");
+    }  
+       if (tankHealth == 0) {
+       console.log("танк уничтожен");
+       break 
+       } 
+}
+
+// Задание 4
+
+let numb = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31]
+let week = ["понедельник", "вторник", "среда", "четверг", "пятница", "суббота", "воскресенье"]
+let day = 6
+
+for(let i = 0; i <= numb.length - 1; i++){
+  console.log(numb[i] + " января, " + week[(day+ i)%7]);
+}
