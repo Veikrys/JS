@@ -1,0 +1,23 @@
+// Задание 1
+
+let str = "al.cher04@yandex.ru"
+let strLen = str.indexOf("@");
+let strLog = str.slice(0, strLen);
+let strLogLen = Math.ceil((strLog.length)/2);
+let log = str.slice(0, (strLog.length - strLogLen));
+let email = str.slice(strLen);
+let str2 = log + "..." + email;
+
+console.log(str);
+console.log(str2);
+
+// Задание 2
+console.log(" ");
+
+let string = "JavaScript Exercises"
+let space = string.indexOf(" ")
+let change = string[0].toLocaleLowerCase();
+let string2 = change + string.slice(1, (space)) + string.slice((space + 1))
+
+console.log(string);
+console.log(string2);
