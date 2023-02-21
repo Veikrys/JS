@@ -1,0 +1,25 @@
+// Задание 1
+
+let password = "67545787"
+if(password.length >= 4 && (password.includes("-") || password.includes("_"))){
+   console.log("Пароль достаточно надёжный");
+  
+} else{
+    console.log("Пароль недостаточно надёжный");
+}
+
+// Задание 2
+
+let name = "маКсИм"
+let surname = "ЛиПаТов"
+
+let name1 = name[0].toUpperCase() + (name.slice(1)).toLowerCase();
+let surname1 = surname[0].toUpperCase() + (surname.slice(1)).toLowerCase();
+console.log(name1);
+console.log(surname1);
+
+if(name == name1 && surname == surname1){
+    console.log("Имя и фамилия остались без изменений");
+} else {
+    console.log("Имя и фамилия были изменены");
+}
