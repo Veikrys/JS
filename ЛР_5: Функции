@@ -1,0 +1,49 @@
+// Задание 1
+
+const email = ["адрес", "адрес1", "адрес2", "адрес3", "адрес4", "адрес5"];
+const bList = ["адрес3", "адрес5"];
+let wList = [];
+
+function filter(email, bList) {
+  for (let i = 0; i < email.length; i++) {
+    if (bList.includes(email[i])) {
+      continue;
+    } else {
+      wList.push(email[i]);
+    }
+  }
+  return wList;
+}
+
+console.log(filter(email, bList));
+
+// Задание 2
+
+let sum = 56900;
+let products = 11;
+let prom = "ДАРИМ300";
+
+function calculate(sum, products, prom = null) {
+  if (prom === "ДАРИМ300") {
+    sum = sum - 300;
+    if (sum < 0) {
+      sum = 0;
+    }
+  }
+
+  if (products >= 10) {
+    sum = sum - (sum / 100) * 15;
+  }
+
+  if (sum > 50000) {
+    sum = sum - ((sum - 50000) / 100) * 20;
+  }
+
+  if (prom == "СКИДКА15" && sum >= 20000) {
+    sum = sum - (sum / 100) * 15;
+  }
+
+  return Math.floor(sum);
+}
+
+console.log(calculate(sum, products, prom));
