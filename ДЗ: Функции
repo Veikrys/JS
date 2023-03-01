@@ -1,0 +1,95 @@
+// Задание 1
+console.log("");
+
+let chisla = [0, 1, 4, 7, 2, 10, 15, 67, 89, 6];
+let chisla10 = [];
+
+function isNumberRange(number){
+    if(number > 0 && number < 10){
+        return true;
+    }  else {
+        return false;
+       }
+       
+   }
+
+for (let i = 0; i < chisla.length; i++) {
+    isNumberRange(chisla[i])
+
+    if(isNumberRange(chisla[i]) == true){
+       chisla10.push(chisla[i])
+    }
+}
+
+console.log(chisla10)
+
+// Задание 2
+console.log("");
+
+function ageName(age){
+    if(age >= 1 && age <= 17){
+        return "ребёнок"
+    } else if(age >= 18 && age <= 30){
+        return "молодой"  
+    } else if(age > 30 && age <=55 ){
+        return "зрелый"
+    } else if(age > 55){
+        return "старый"
+    }
+}
+
+for (let i = 1; i < 100 + 1; i++) {
+    
+    ageName(i)
+    
+    console.log(i + " - " + ageName(i));
+}
+
+// Задание 3
+console.log("");
+
+let Null = [1, 2, 3, 0, null, "кошка", "", "собака", false, true, undefined];
+let notNull = []
+
+function clear(array) {
+    if(array == false || array == undefined || array == "" || array == 0 || array == null){
+        return false
+    } else {
+        return true
+    }
+}
+
+for (let i = 0; i < Null.length; i++) {
+    clear(Null[i])
+
+    if(clear(Null[i]) == true){
+        notNull.push(Null[i])
+    }
+    
+}
+
+console.log(notNull);
+
+// Задание 4
+console.log("");
+
+let double = [12345, 1, 1, 2, 5, "cat", 'cat', 'dog', true, true, false, 12345]
+let notDouble = []
+
+function clear2(array2, univ){
+    if(array2.includes(array2[univ], univ + 1)){
+        return false
+    } else {
+        return true
+    }
+}
+
+for (let i = 0; i < double.length; i++) {
+    clear2(double, i)
+    
+    if(clear2(double, i) == true){
+        notDouble.push(double[i])
+    }
+}
+
+console.log(notDouble);
