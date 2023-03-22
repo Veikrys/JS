@@ -1,0 +1,22 @@
+#body1{
+    background-color: cadetblue;
+}
+
+#h1{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#div{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+#elem{
+    position: absolute;
+    transform: translate(0, -250%)
+}
