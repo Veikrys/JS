@@ -18,6 +18,7 @@ for (let i of users) {
   }
   if (status == false) {
     alert("Oшибка авторизации");
+    break
   }
 }
 
@@ -42,7 +43,7 @@ for (let i = 0; i < tryes; i++) {
     i++;
   } else if (parseInt(prom2) == null) {
     break;
-  } else if (isNaN(parseInt(prom2))) {
+  } else if (isNaN(parseInt(prom2)) && eval(prom2) != null) {
     alert("Должно быть число!");
     prom2 = prompt("Введите число");
   }
