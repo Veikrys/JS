@@ -10,7 +10,6 @@ let prom = prompt("Введите логин");
 let prom1 = prompt("Введите пароль");
 let status = false;
 
-// не успел сделать с помощью функции
 for (let i of users) {
   if (i.login == prom && i.pass == prom1) {
     alert("Здравствуйте, " + i.name);
@@ -26,9 +25,8 @@ for (let i of users) {
 
 let number = 10;
 let prom2 = prompt("Введите число");
-let tryes = 5; // ввёл кол-во попыток(просто ради интереса)
+let tryes = 5; 
 
-// не успел сделать с помощью функции
 for (let i = 0; i < tryes; i++) {
   if (number == parseInt(prom2)) {
     alert("Правильно!");
@@ -43,7 +41,7 @@ for (let i = 0; i < tryes; i++) {
     i++;
   } else if (parseInt(prom2) == null) {
     break;
-  } else if (isNaN(parseInt(prom2)) && eval(prom2) != null) {
+  } else if (isNaN(parseInt(prom2)) && prom2 != null) {
     alert("Должно быть число!");
     prom2 = prompt("Введите число");
   }
