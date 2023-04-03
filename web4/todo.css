@@ -1,0 +1,22 @@
+#body{
+    background-color: cadetblue;
+}
+
+#h1{
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+}
+
+#enter{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative
+}
+
+#table{ 
+    position: absolute;
+    transform: translate(0, 50%)
+}
